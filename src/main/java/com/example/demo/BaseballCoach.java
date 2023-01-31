@@ -1,10 +1,11 @@
 package com.example.demo;
 
-public class BaseballCoach implements Coach{
+public class BaseballCoach implements com.example.demo.Coach {
 
-    private FortuneService fortuneService;
+    private final com.example.demo.FortuneService fortuneService;
 
-    public BaseballCoach(FortuneService fortuneService) {
+    public BaseballCoach(com.example.demo.FortuneService fortuneService) {
+
         this.fortuneService = fortuneService;
     }
 

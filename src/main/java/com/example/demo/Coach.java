@@ -1,9 +1,9 @@
 package com.example.demo;
 
 public interface Coach {
-    public String getDailyWorkout();
+    String getDailyWorkout();
 
-    public String getDailyFortune();
+    String getDailyFortune();
 
-    public String getKazkas();
+    String getKazkas();
 }
