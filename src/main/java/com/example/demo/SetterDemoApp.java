@@ -9,11 +9,10 @@ public class SetterDemoApp {
 
         Coach coach = context.getBean("tennisCoach", Coach.class);
 
-        FortuneService fortuneService = new RandomFortuneService();
-
+        TennisCoach tennisCoach = context.getBean("tennisCoach", TennisCoach.class);
 
         System.out.println(coach.getDailyFortune());
-        System.out.println(fortuneService.getFortune());
+        System.out.println(tennisCoach.getDailyFortune());
 
 
         context.close();
