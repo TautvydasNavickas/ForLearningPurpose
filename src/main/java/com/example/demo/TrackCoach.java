@@ -23,8 +23,20 @@ public class TrackCoach implements com.example.demo.Coach {
     }
 
     @Override
-
     public String getKazkas() {
         return "Mahaha";
     }
+
+    public void doMyStartupStuff() {
+        System.out.println("TrackCoach: inside doMyStartUpStuff");
+    }
+
+    public void doMyStartUpStuffYoYo(){
+        System.out.println("TrackCoach: inside yoyo");
+    }
+
+
+
 }
+
+
