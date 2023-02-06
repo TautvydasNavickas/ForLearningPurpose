@@ -1,9 +1,9 @@
-package com.example.demo;
+package com.example.demo.LessonsFromOneToSeven;
 
 
-public class TrackCoach implements com.example.demo.Coach {
+public class TrackCoach implements Coach {
 
-    private com.example.demo.FortuneService fortuneService;
+    private FortuneService fortuneService;
 
     public TrackCoach () {
 

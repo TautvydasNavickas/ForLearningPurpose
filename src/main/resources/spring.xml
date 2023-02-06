@@ -8,25 +8,25 @@
     <context:property-placeholder location="classpath:sport.properties"/>
 
     <bean id="myFortune"
-          class="com.example.demo.HappyFortuneService">
+          class="com.example.demo.LessonsFromOneToSeven.HappyFortuneService">
     </bean>
 
     <bean id="MyCoach"
-          class="com.example.demo.TrackCoach">
+          class="com.example.demo.LessonsFromOneToSeven.TrackCoach">
         <constructor-arg ref="myFortune"/>
     </bean>
 
     <bean id="coachBean"
-    class="com.example.demo.RandomFortuneService">
+    class="com.example.demo.LessonsFromOneToSeven.RandomFortuneService">
     </bean>
 
     <bean id="tennisCoach"
-          class="com.example.demo.TennisCoach">
+          class="com.example.demo.LessonsFromOneToSeven.TennisCoach">
         <constructor-arg ref="coachBean"/>
     </bean>
 
     <bean id="myCricketCoach"
-          class="com.example.demo.CricketCoach">
+          class="com.example.demo.LessonsFromOneToSeven.CricketCoach">
     <property name="fortuneService" ref="myFortune"/>
         <property name="emailAddress" value="${foo.email}"/>
         <property name="team" value="${foo.team}"/>

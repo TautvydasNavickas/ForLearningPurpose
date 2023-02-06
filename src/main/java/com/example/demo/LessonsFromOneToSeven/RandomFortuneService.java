@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.LessonsFromOneToSeven;
 
 import java.util.Random;
 
