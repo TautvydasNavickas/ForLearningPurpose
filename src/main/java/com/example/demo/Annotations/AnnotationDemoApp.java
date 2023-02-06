@@ -11,7 +11,8 @@ public class AnnotationDemoApp {
         Coach basketBallCoach = classPathXmlApplicationContext.getBean("basketBallCoach", Coach.class);
 
         System.out.println(coach.getDailyWorkout());
-        System.out.println(basketBallCoach.getDailyWorkout());
+
+        System.out.println(coach.getDailyFortune());
 
         classPathXmlApplicationContext.close();
     }
