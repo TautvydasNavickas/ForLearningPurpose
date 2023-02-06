@@ -12,9 +12,12 @@ public class BeanLifeCycleDemoApp {
         System.out.println(coach.getDailyFortune());
 
 
+
         classPathXmlApplicationContext.close();
 
 
+        }
+
 
     }
-}
+

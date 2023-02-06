@@ -14,4 +14,15 @@
         <constructor-arg ref="myFortune"/>
     </bean>
 
+    <bean id="coachBean"
+          class="com.example.demo.RandomFortuneService">
+    </bean>
+
+    <bean id="tennisCoach"
+          class="com.example.demo.TennisCoach"
+        scope="prototype">
+        <constructor-arg ref="coachBean"/>
+
+    </bean>
+
 </beans>

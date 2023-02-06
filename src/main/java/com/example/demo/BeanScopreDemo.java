@@ -11,12 +11,22 @@ public class BeanScopreDemo {
 
         Coach alphaCoach = classPathXmlApplicationContext.getBean("myCoach", Coach.class);
 
+        Coach coachHome = classPathXmlApplicationContext.getBean("tennisCoach", Coach.class);
+        Coach coachHomeSecond = classPathXmlApplicationContext.getBean("tennisCoach", Coach.class);
+
+
+
+
         boolean result = (coach ==alphaCoach);
 
-        System.out.println(result);
+        boolean resultHome = (coachHome == coachHomeSecond);
 
-        System.out.println("memory location for coach" + coach);
-        System.out.println("memory location for alphacoach" + alphaCoach);
+        System.out.println(resultHome);
+
+
+
+        System.out.println("memory location for coach" + coachHome);
+        System.out.println("memory location for alphacoach" + coachHomeSecond);
 
 
 
