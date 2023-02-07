@@ -1,11 +1,13 @@
 package com.example.demo.Annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class TennisCoach implements Coach{
-
+    @Autowired
+//    @Qualifier("randomFortuneService")
     private FortuneService fortuneService;
 
 //    @Autowired
@@ -16,11 +18,11 @@ public class TennisCoach implements Coach{
     public TennisCoach(){
         System.out.println("TennisCoach: inside default constructor");
     }
-    @Autowired
-    public void setFortuneService(FortuneService fortuneService) {
-        System.out.println("TennisCoach: inside setter");
-        this.fortuneService = fortuneService;
-    }
+//    @Autowired
+//    public void setFortuneService(FortuneService fortuneService) {
+//        System.out.println("TennisCoach: inside setter");
+//        this.fortuneService = fortuneService;
+//    }
 
     @Override
     public String getDailyWorkout() {
