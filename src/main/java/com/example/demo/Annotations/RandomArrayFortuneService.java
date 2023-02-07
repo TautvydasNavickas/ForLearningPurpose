@@ -13,14 +13,12 @@ import java.util.Random;
 
 @Component
 public class RandomArrayFortuneService implements FortuneService{
-
-    @Value("${foo.fortunes}")
-    private String[] myArray;
-    private final Random random = new Random();
-
+    @Value("${foo.fortunes}$")
+   private String[] data;
+   private Random random = new Random();
     @Override
     public String getFortune() {
-        int index = random.nextInt(myArray.length);
-        return myArray[index];
+        return data[random.nextInt(data.length)];
+
     }
 }
