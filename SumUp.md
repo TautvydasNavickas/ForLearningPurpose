@@ -24,4 +24,9 @@ aiškumo galima parašyti. Jeigu yra multiple implementations, tuomet reikia nau
 @Qualifier ir noridyti atitinkamai id(klasės pavadinimą, kurią norimą inject)
 Taip pat galima inject properties file naudojant @value anotaciją bei nurodant xml file, kad įtraukti properties bei kur ieškoti.(sport.properties ir spring.xml pavyzdys)
 
+Section 9(Annotations - bean scopes and lifecycle methods)
+
+Norint nurodyti scope, virš klasės nurodome anotaciją @Scope(), su scope tipu.
+Norint nurodyti lifecycle, virš metodo rašome anotacija @PostConstruct arba @PreDestroy. Atitinkamai yra init arba destroy.
+@PreDestroy neveikia, kuomet bean scope prototype.
 

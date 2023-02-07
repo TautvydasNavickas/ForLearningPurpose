@@ -1,5 +1,8 @@
 package com.example.demo.LessonsFromOneToSeven;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+
 public class TennisCoach implements Coach{
 
     private FortuneService fortuneService;
@@ -7,6 +10,8 @@ public class TennisCoach implements Coach{
     public TennisCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
+
+
 
     @Override
     public String getDailyWorkout() {
@@ -22,4 +27,6 @@ public class TennisCoach implements Coach{
     public String getKazkas() {
         return null;
     }
+
+
 }

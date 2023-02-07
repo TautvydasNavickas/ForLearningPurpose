@@ -1,32 +1,36 @@
 package com.example.demo.Annotations;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
 public class TennisCoach implements Coach{
-    @Autowired
-    @Qualifier("randomArrayFortuneService")
-    private FortuneService fortuneService;
 
-//    @Autowired
-//    public TennisCoach(FortuneService fortuneService) {
-//        this.fortuneService = fortuneService;
-//    }
+    @Autowired
+    @Qualifier("readFromTextFile")
+    private FortuneService fortuneService;
 
     public TennisCoach(){
         System.out.println("TennisCoach: inside default constructor");
     }
-//    @Autowired
-//    public void setFortuneService(FortuneService fortuneService) {
-//        System.out.println("TennisCoach: inside setter");
-//        this.fortuneService = fortuneService;
-//    }
+
+    @PostConstruct
+    public void postFofo(){
+        System.out.println("Inside postConstruct");
+    }
+    @PreDestroy
+    public void preDestroyfofo(){
+        System.out.println("Inside preDestroyfofo");
+    }
+
 
     @Override
     public String getDailyWorkout() {
-        return "Practice your backhand volley";
+        return null;
     }
 
     @Override

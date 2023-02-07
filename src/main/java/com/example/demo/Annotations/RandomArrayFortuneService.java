@@ -14,7 +14,7 @@ import java.util.Random;
 @Component
 public class RandomArrayFortuneService implements FortuneService{
     @Value("${foo.fortunes}$")
-   private String[] data;
+    private String[] data;
    private Random random = new Random();
     @Override
     public String getFortune() {
