@@ -30,3 +30,11 @@ Norint nurodyti scope, virš klasės nurodome anotaciją @Scope(), su scope tipu
 Norint nurodyti lifecycle, virš metodo rašome anotacija @PostConstruct arba @PreDestroy. Atitinkamai yra init arba destroy.
 @PreDestroy neveikia, kuomet bean scope prototype.
 
+Section 10(Java conf without xml)
+
+Sukuriamas config file(ex SportConfig). Virš klasės uždeda anotacija @Configuration. Toliau yra du būdai. Pirmasis uždėti
+anotaciją @ComponentScan("name")(ex SwimCoach) ir mainapp'e naudojam AnnotationConfigApplicationContext. Toliau viskas tas pats kaip su xml.
+Antrasis kelias yra nenaudoti @ComponentScan, o viduje config.class naudoti @Bean. Pirmiausia, sukuriamas bean(ex SportConfig).
+Po to tas bean naudojamas gali būti naudojamas dependency injection. Tam sukuriamas kitas beans. Metodo pavadinimas yra bean id.
+Toliau viskas vėl tas pats.
+
