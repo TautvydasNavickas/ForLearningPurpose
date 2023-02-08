@@ -1,7 +1,5 @@
 package com.example.demo.LessonsFromOneToSeven;
 
-import jakarta.annotation.PostConstruct;
-import jakarta.annotation.PreDestroy;
 
 public class TennisCoach implements Coach{
 
