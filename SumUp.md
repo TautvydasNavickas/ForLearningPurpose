@@ -38,3 +38,8 @@ Antrasis kelias yra nenaudoti @ComponentScan, o viduje config.class naudoti @Bea
 Po to tas bean naudojamas gali būti naudojamas dependency injection. Tam sukuriamas kitas beans. Metodo pavadinimas yra bean id.
 Toliau viskas vėl tas pats.
 
+Section 11 (Spring MVC)
+
+Model-View-Controller. Model - saugomi ir perduodami duomenys, objektai. View - ką mato vartotojas. Controller - visa logika
+
+

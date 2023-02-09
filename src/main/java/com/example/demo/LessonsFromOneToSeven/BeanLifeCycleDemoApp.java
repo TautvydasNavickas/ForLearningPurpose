@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class BeanLifeCycleDemoApp {
     public static void main(String[] args) {
 
-        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("beanLifeCycle.xml");
+        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("XML/beanLifeCycle.xml");
 
         Coach coach = classPathXmlApplicationContext.getBean("myCoach", Coach.class);
 

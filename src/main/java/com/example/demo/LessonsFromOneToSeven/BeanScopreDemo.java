@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class BeanScopreDemo {
     public static void main(String[] args) {
 
-        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("beanScope.xml");
+        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("XML/beanScope.xml");
 
         Coach coach = classPathXmlApplicationContext.getBean("myCoach", Coach.class);
 

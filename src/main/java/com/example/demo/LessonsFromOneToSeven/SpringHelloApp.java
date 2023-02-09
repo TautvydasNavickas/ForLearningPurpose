@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SpringHelloApp {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("XML/spring.xml");
         Coach theCoach = context.getBean("MyCoach", Coach.class);
         FortuneService fortuneService = context.getBean("myFortune", FortuneService.class);
         System.out.println(fortuneService.getFortune() + "ei tu");
