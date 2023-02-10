@@ -11,6 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
 	<name>mokymasis</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -22,16 +23,11 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 			<version>3.0.2</version>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-			<version>3.0.2</version>
-		</dependency>
-		<dependency>
+				<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 		</dependency>
-	</dependencies>
+		</dependencies>
 
 	<build>
 		<plugins>

@@ -1,8 +1,6 @@
 package com.example.demo.Annotations;
 
-import org.springframework.boot.autoconfigure.web.reactive.HttpHandlerAutoConfiguration;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class JavaConfigDemoApp {
     public static void main(String[] args) {
